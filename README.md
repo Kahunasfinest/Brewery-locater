@@ -1,4 +1,4 @@
-# Brewery-locater
+# Sip Seeker
 
 The Sip Seeker is an app for avid travelers and connoisseurs of beers and ciders who want to discover local breweries of the city they are exploring. Users can search any city in the search bar, and the Sip Seeker will return information about the current weather and local breweries, including their address and contact information.  
 
