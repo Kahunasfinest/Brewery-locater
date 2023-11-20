@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>SipSeeker</title>
+    
+</head>
+<body>
+    <div class="header-container">
+        <h2>The SipSeeker: Discover Your City's Brewery Secrets!</h2>
+        <h4>Search any city's breweries and check the weather before you go</h4>
+    </div>
+
+    <div class="search-container">
+        <form class="search">
+            <input type="text" id="cityInput" placeholder="enter city">
+            <button id="searchButton"><img src="assets/images/search.png" alt="search"></button>
+        </form>
+    </div>
+
+    <div class="tile is-ancestor tile-container">
+        <div class="tile is-parent">
+            <div class="tile is-child weather-card" id="card0">
+                <div class="weather">
+                    <h1 class="temperature" id="temperature0">50°F</h1>
+                    <h1 class="city" id="city0">New York</h1>
+                    <div class="details">
+                        <div class="col">
+                            <img src="assets/images/humidity.png" class="icon" id="humidity-icon">
+                            <p class="humidity" id="humidity0">70%</p>
+                            <p class="humidity-text">Humidity</p>
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/wind.png" class="icon" id="wind-icon">
+                            <p class="wind" id="wind0">10mph</p>
+                            <p class="wind-text">Wind</p>
+                            <h3 class="day" id="day0"></h3>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-parent brewery-tiles" id="brewery-container">
+        </div>
+    </div>
+
+    <div id="historyList"></div>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
